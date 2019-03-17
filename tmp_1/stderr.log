@@ -1,0 +1,157 @@
+0it [00:00, ?it/s]
+21it [00:00, 205.24it/s]
+44it [00:00, 209.18it/s]
+69it [00:00, 215.58it/s]
+87it [00:00, 201.65it/s]
+100it [00:00, 207.18it/s]
+
+0it [00:00, ?it/s]
+20it [00:00, 196.86it/s]
+44it [00:00, 202.89it/s]
+69it [00:00, 211.76it/s]
+87it [00:00, 200.48it/s]
+100it [00:00, 207.60it/s]
+
+0it [00:00, ?it/s]
+200it [00:00, 2897.84it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+loss: 70.1617 ||:  50%|#####     | 1/2 [00:01<00:01,  1.94s/it]
+loss: 72.2805 ||: 100%|##########| 2/2 [00:07<00:00,  2.94s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+BLEU: 0.0000, loss: 73.8587 ||:  50%|#####     | 1/2 [00:19<00:19, 19.38s/it]
+BLEU: 0.0000, loss: 78.4391 ||: 100%|##########| 2/2 [01:04<00:00, 27.21s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+loss: 73.0798 ||:  50%|#####     | 1/2 [00:01<00:01,  1.91s/it]
+loss: 72.5824 ||: 100%|##########| 2/2 [00:05<00:00,  2.49s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+BLEU: 0.0000, loss: 66.9871 ||:  50%|#####     | 1/2 [00:19<00:19, 19.51s/it]
+BLEU: 0.0000, loss: 69.2716 ||: 100%|##########| 2/2 [01:04<00:00, 27.13s/it]
+
+0it [00:00, ?it/s]
+23it [00:00, 222.48it/s]
+46it [00:00, 221.70it/s]
+70it [00:00, 222.65it/s]
+88it [00:00, 202.02it/s]
+100it [00:00, 210.98it/s]
+
+0it [00:00, ?it/s]
+20it [00:00, 193.52it/s]
+44it [00:00, 200.68it/s]
+69it [00:00, 209.68it/s]
+87it [00:00, 199.24it/s]
+100it [00:00, 206.73it/s]
+
+0it [00:00, ?it/s]
+21it [00:00, 205.75it/s]
+45it [00:00, 213.34it/s]
+69it [00:00, 217.97it/s]
+87it [00:00, 203.03it/s]
+100it [00:00, 210.20it/s]
+
+0it [00:00, ?it/s]
+20it [00:00, 196.20it/s]
+44it [00:00, 201.88it/s]
+69it [00:00, 211.41it/s]
+87it [00:00, 198.92it/s]
+100it [00:00, 205.62it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+loss: 66.8546 ||:  50%|#####     | 1/2 [00:01<00:01,  1.98s/it]
+loss: 67.6926 ||: 100%|##########| 2/2 [00:05<00:00,  2.57s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/run.py", line 21, in <module>
+    run()
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/run.py", line 18, in run
+    main(prog="allennlp")
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/__init__.py", line 101, in main
+    args.func(args)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/train.py", line 103, in train_model_from_args
+    args.force)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/train.py", line 136, in train_model_from_file
+    return train_model(params, serialization_dir, file_friendly_logging, recover, force)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/train.py", line 204, in train_model
+    metrics = trainer.train()
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/training/trainer.py", line 477, in train
+    val_loss, num_batches = self._validation_loss()
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/training/trainer.py", line 414, in _validation_loss
+    loss = self.batch_loss(batch_group, for_training=False)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/training/trainer.py", line 247, in batch_loss
+    output_dict = self.model(**batch)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 204, in forward
+    predictions = self._forward_beam_search(state)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 519, in _forward_beam_search
+    start_predictions, state, self.take_search_step)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/nn/beam_search.py", line 150, in search
+    class_log_probabilities, state = step(last_predictions, state)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 772, in take_search_step
+    final_log_probs = self._gather_final_log_probs(generation_log_probs, copy_log_probs, state)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 669, in _gather_final_log_probs
+    source_previous_occurences = source_token_ids[:, 0:i] == source_token_ids[:, i].unsqueeze(-1)
+KeyboardInterrupt
+0it [00:00, ?it/s]
+21it [00:00, 209.15it/s]
+46it [00:00, 217.28it/s]
+69it [00:00, 217.69it/s]
+87it [00:00, 203.30it/s]
+100it [00:00, 194.19it/s]
+
+0it [00:00, ?it/s]
+23it [00:00, 226.22it/s]
+47it [00:00, 228.78it/s]
+73it [00:00, 234.30it/s]
+93it [00:00, 222.52it/s]
+100it [00:00, 229.83it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+loss: 66.8546 ||:  50%|#####     | 1/2 [00:01<00:01,  1.92s/it]
+loss: 67.6926 ||: 100%|##########| 2/2 [00:05<00:00,  2.48s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/run.py", line 21, in <module>
+    run()
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/run.py", line 18, in run
+    main(prog="allennlp")
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/__init__.py", line 101, in main
+    args.func(args)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/train.py", line 103, in train_model_from_args
+    args.force)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/train.py", line 136, in train_model_from_file
+    return train_model(params, serialization_dir, file_friendly_logging, recover, force)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/commands/train.py", line 204, in train_model
+    metrics = trainer.train()
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/training/trainer.py", line 477, in train
+    val_loss, num_batches = self._validation_loss()
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/training/trainer.py", line 414, in _validation_loss
+    loss = self.batch_loss(batch_group, for_training=False)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/training/trainer.py", line 247, in batch_loss
+    output_dict = self.model(**batch)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/torch/nn/modules/module.py", line 489, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 204, in forward
+    predictions = self._forward_beam_search(state)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 519, in _forward_beam_search
+    start_predictions, state, self.take_search_step)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/nn/beam_search.py", line 150, in search
+    class_log_probabilities, state = step(last_predictions, state)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 772, in take_search_step
+    final_log_probs = self._gather_final_log_probs(generation_log_probs, copy_log_probs, state)
+  File "/Users/alexanderleirvag/anaconda/envs/allennlp/lib/python3.6/site-packages/allennlp-0.8.3_unreleased-py3.6.egg/allennlp/models/encoder_decoders/copynet_seq2seq.py", line 663, in _gather_final_log_probs
+    combined = torch.cat((copy_log_probs_slice.unsqueeze(-1), future_copy_log_probs), dim=-1)
+KeyboardInterrupt
