@@ -3,6 +3,7 @@
     {
         "target_namespace": "target_tokens",
         "type": "copynet_seq2seq",
+        "lazy": true,
         "source_tokenizer":
         {
             "type": "word",
@@ -26,7 +27,7 @@
 
 
     },
-    "train_data_path": "small_test.tsv",
+    "train_data_path": "./data/train_qa_seq2seq.tsv",
     "validation_data_path": "small_test.tsv",
     "model":
     {
