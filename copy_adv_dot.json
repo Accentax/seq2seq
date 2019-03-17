@@ -45,19 +45,15 @@
 
         "encoder":
         {
-            "type": "stacked_self_attention",
-            "input_dim": 256,
-            "hidden_dim": 256,
-            "projection_dim":128,
-            "feedforward_hidden_dim":128,
-            "num_attention_heads":8,
-            "num_layers": 1
+            "type": "gru",
+            "input_size": 256,
+            "hidden_size": 256,
+            "num_layers": 2,
+            "bidirectional":true
         },
         "attention":
         {
-            "type": "bilinear",
-            "vector_dim": 256,
-            "matrix_dim": 256
+            "type": "dot_product"
         },
         "target_embedding_dim": 256,
         "beam_size": 4,

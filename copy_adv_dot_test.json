@@ -27,7 +27,7 @@
 
 
     },
-    "train_data_path": "./data/train_qa_seq2seq.tsv",
+    "train_data_path": "small_test.tsv",
     "validation_data_path": "small_test.tsv",
     "model":
     {
@@ -38,28 +38,24 @@
             {
                 "type": "embedding",
                 "vocab_namespace": "source_tokens",
-                "embedding_dim": 256,
+                "embedding_dim": 10,
                 "trainable": true
             }
         },
 
         "encoder":
         {
-            "type": "stacked_self_attention",
-            "input_dim": 256,
-            "hidden_dim": 256,
-            "projection_dim":128,
-            "feedforward_hidden_dim":128,
-            "num_attention_heads":8,
-            "num_layers": 1
+            "type": "gru",
+            "input_size": 10,
+            "hidden_size": 10,
+            "num_layers": 1,
+            "bidirectional":true
         },
         "attention":
         {
-            "type": "bilinear",
-            "vector_dim": 256,
-            "matrix_dim": 256
+            "type": "dot_product"
         },
-        "target_embedding_dim": 256,
+        "target_embedding_dim": 10,
         "beam_size": 4,
         "max_decoding_steps": 30
     },
@@ -74,9 +70,9 @@
     },
     "trainer":
     {
-        "num_epochs": 20,
+        "num_epochs": 1,
         "patience": 10,
-        "cuda_device": 0,
+        "cuda_device": -1,
         "should_log_parameter_statistics":true,
         "should_log_learning_rate":true,
         "optimizer":

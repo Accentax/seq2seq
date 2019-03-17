@@ -1,2 +1,2 @@
-allennlp train ./copy_adv.json -s ./run_1/ 
+allennlp train ./copy_adv_dot.json -s ./run_1 
 
