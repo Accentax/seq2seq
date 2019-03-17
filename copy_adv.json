@@ -38,7 +38,7 @@
             {
                 "type": "embedding",
                 "vocab_namespace": "source_tokens",
-                "embedding_dim": 25,
+                "embedding_dim": 100,
                 "trainable": true
             }
         },
@@ -74,9 +74,11 @@
     },
     "trainer":
     {
-        "num_epochs": 2,
+        "num_epochs": 20,
         "patience": 10,
-        "cuda_device": -1,
+        "cuda_device": 0,
+        "should_log_parameter_statistics":true,
+        "should_log_learning_rate":true,
         "optimizer":
         {
             "type": "adam",
