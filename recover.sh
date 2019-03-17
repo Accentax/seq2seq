@@ -1,2 +1,2 @@
-allennlp train ./tmp_1/config.json -s ./tmp_1/ --recover
+allennlp train ./run_1/config.json -s ./run_1/ --recover
 
